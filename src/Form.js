@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
@@ -63,6 +62,7 @@ export default function Form(props) {
           <MenuItem value='english'>English</MenuItem>
           <MenuItem value='french'>French</MenuItem>
           <MenuItem value='spanish'>Spanish</MenuItem>
+          <MenuItem value='spanish'>Korean</MenuItem>
         </Select>
         <form className={classes.form}>
           <FormControl margin='normal' required fullWidth>
