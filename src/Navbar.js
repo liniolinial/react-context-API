@@ -14,16 +14,20 @@ import { LanguageContext } from "./contexts/LanguageContext";
 const content = {
   english: {
     search: "Search",
-    flag: "🇬🇧"
+    flag: "🇬🇧",
   },
   french: {
     search: "Chercher",
-    flag: "🇫🇷"
+    flag: "🇫🇷",
   },
   spanish: {
     search: "Buscar",
-    flag: "🇪🇸"
-  }
+    flag: "🇪🇸",
+  },
+  korean: {
+    search: "검색",
+    flag: "🇰🇷",
+  },
 };
 function Navbar(props) {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
@@ -50,7 +54,7 @@ function Navbar(props) {
               placeholder={`${search}...`}
               classes={{
                 root: classes.inputRoot,
-                input: classes.inputInput
+                input: classes.inputInput,
               }}
             />
           </div>

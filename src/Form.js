@@ -19,20 +19,26 @@ const words = {
     signIn: "Sign In",
     email: "Email Address",
     password: "Password",
-    remember: "Remember Me"
+    remember: "Remember Me",
   },
   french: {
     signIn: "Se Connecter",
     email: "Adresse Électronique",
     password: "Mot de Passe",
-    remember: "Souviens-toi De Moi"
+    remember: "Souviens-toi De Moi",
   },
   spanish: {
     signIn: "Registrarse",
     email: "Correo Electrónico",
     password: "Contraseña",
-    remember: "Recuérdame"
-  }
+    remember: "Recuérdame",
+  },
+  korean: {
+    signIn: "로그인",
+    email: "이메일",
+    password: "비밀번호",
+    remember: "로그인 저장",
+  },
 };
 function Form(props) {
   const { language, changeLanguage } = useContext(LanguageContext);
@@ -49,6 +55,7 @@ function Form(props) {
           <MenuItem value='english'>English</MenuItem>
           <MenuItem value='french'>French</MenuItem>
           <MenuItem value='spanish'>Spanish</MenuItem>
+          <MenuItem value='korean'>Korean</MenuItem>
         </Select>
         <form className={classes.form}>
           <FormControl margin='normal' required fullWidth>
@@ -68,8 +75,7 @@ function Form(props) {
             type='submit'
             fullWidth
             color='primary'
-            className={classes.submit}
-          >
+            className={classes.submit}>
             {signIn}
           </Button>
         </form>
