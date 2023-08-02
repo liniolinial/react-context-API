@@ -45,7 +45,7 @@ const words = {
   },
 };
 
-export default function Form(props) {
+function Form(props) {
   const { language, changeLanguage } = useContext(LanguageContext);
   // functional component doesn't have render
   const { classes } = props;
@@ -91,4 +91,5 @@ export default function Form(props) {
   );
 }
 
-// export default withStyles(styles)(Form);
+// export default kann nur einmal eingesetzt werden.
+export default withStyles(styles)(Form);
