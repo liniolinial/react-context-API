@@ -62,7 +62,7 @@ export default function Form(props) {
           <MenuItem value='english'>English</MenuItem>
           <MenuItem value='french'>French</MenuItem>
           <MenuItem value='spanish'>Spanish</MenuItem>
-          <MenuItem value='spanish'>Korean</MenuItem>
+          <MenuItem value='korean'>Korean</MenuItem>
         </Select>
         <form className={classes.form}>
           <FormControl margin='normal' required fullWidth>
